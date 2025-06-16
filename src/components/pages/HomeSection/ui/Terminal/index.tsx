@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import {  Autoplay } from 'swiper/modules';
 const Terminal = () => {
   return (
-    <section className="bg-gradient-to-br   px-4" >
+    <section className="bg-gradient-to-br   px-4" id='about'>
 
       <div className="max-w-7xl mx-auto text-center  pb-10 ">
         <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFA5] via-[#00ACC1] to-[#04759C] mb-6 drop-shadow font-['Space_Grotesk'] tracking-tight">
