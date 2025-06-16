@@ -43,52 +43,38 @@ const Terminal = () => {
         >
 
           {AboutUs.map((user, i) => (
-            <SwiperSlide
-              key={i}
-            >
+            <SwiperSlide key={i}>
+  <div className="h-[320px] flex items-end">
+    <div
+      className="relative pt-16 pb-5 px-4 rounded-2xl flex flex-col items-center text-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white shadow-xl transition-all duration-500 hover:shadow-[0_0_25px_rgba(14,165,233,0.7)] hover:-translate-y-2"
+      style={{
+        border: '1px solid rgba(14,165,233,0.4)',
+        minHeight: '250px',
+        zIndex: 0,
+      }}
+    >
+      {/* Avatar */}
+      <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-10 w-[112px] h-[112px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
+        <Image
+          height={200}
+          width={200}
+          src={user.image}
+          alt={user.name}
+          className="w-full h-full rounded-full object-cover border-4 border-gray-900 shadow-lg"
+        />
+      </div>
 
-              <div className='h-[300px] flex items-end '>
-                <div
+      {/* Quote */}
+      <p className="text-sm italic leading-relaxed text-slate-300 relative mt-3 before:content-['“'] before:text-cyan-400 before:text-xl before:mr-1">
+        {user.quote}
+      </p>
 
-                  className="relative bg-white pt-14 pb-4 px-3 rounded-2xl flex flex-col items-center text-center overflow-visible "
-                  style={{
-                    border: '1px solid oklch(0.5 0.15 250.62)',
-                    minHeight: '230px',
-                    zIndex: 0,
-                  }}
-                >
-                  <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-10 w-[112px] h-[112px]">
-                    <Image
-                      height={200} width={200}
-                      src={user.image}
-                      alt={user.name}
-                      className="w-29 h-29 rounded-full object-cover   shadow-md"
-                    />
-                  </div>
+      {/* Name */}
+      <h4 className="text-cyan-400 font-semibold mt-auto">{user.name}</h4>
+    </div>
+  </div>
+</SwiperSlide>
 
-                  {/* {user.stars && (
-                    <div className="flex gap-1 mt-2">
-                      {Array.from({ length: 5 }).map((_, idx) => (
-                        <svg
-                          key={idx}
-                          className="w-4 h-4 text-yellow-400"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.96a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.374 2.453a1 1 0 00-.364 1.118l1.287 3.96c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.374 2.453c-.784.57-1.838-.197-1.539-1.118l1.287-3.96a1 1 0 00-.364-1.118L2.636 9.387c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.96z" />
-                        </svg>
-                      ))}
-                    </div>
-                  )} */}
-
-                  <p className="text-sm text-gray-700 italic leading-relaxed relative before:content-['“'] before:text-orange-400 before:text-xl before:mr-1 mt-2 mb-1">
-                    {user.quote}
-                  </p>
-
-                  <h4 className="text-orange-500 font-semibold mt-auto">{user.name}</h4>
-                </div>
-              </div>
-            </SwiperSlide>
           ))}
 
         </Swiper>
