@@ -19,7 +19,7 @@ const Terminal = () => {
 
       <div className="max-w-7xl mx-auto text-center  pb-10 ">
         <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFA5] via-[#00ACC1] to-[#04759C] mb-6 drop-shadow font-['Space_Grotesk'] tracking-tight">
-          Thành viên chúng tôi
+          Member 
         </h2>
         {/* <p className="text-gray-600 max-w-3xl mx-auto text-base mb-10">
          Là thành viên trong nhóm tham gia và đóng góp tích cực vào quá trình phát triển dự án, đồng thời phối hợp cùng các thành viên khác để trình bày và hoàn thiện sản phẩm dự thi.
