@@ -15,6 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EG GROUP",
   description: "EG GROUP là một tập thể tiên phong trong lĩnh vực phát triển phần mềm, quy tụ những con người đam mê sáng tạo, đổi mới và không ngừng học hỏi. Với tầm nhìn vượt ra ngoài biên giới Việt Nam, chúng tôi mang trong mình khát vọng xây dựng những giải pháp phần mềm tiên tiến, đáp ứng nhu cầu của các doanh nghiệp trong và ngoài nước. Bằng tinh thần đoàn kết và quyết tâm mạnh mẽ, EG GROUP không ngừng nỗ lực để đưa sản phẩm phần mềm vươn tầm quốc tế.",
+openGraph: {
+    title: "EG GROUP",
+    description: "EG GROUP là một tập thể tiên phong trong lĩnh vực phát triển phần mềm, quy tụ những con người đam mê sáng tạo, đổi mới và không ngừng học hỏi. Với tầm nhìn vượt ra ngoài biên giới Việt Nam, chúng tôi mang trong mình khát vọng xây dựng những giải pháp phần mềm tiên tiến, đáp ứng nhu cầu của các doanh nghiệp trong và ngoài nước. Bằng tinh thần đoàn kết và quyết tâm mạnh mẽ, EG GROUP không ngừng nỗ lực để đưa sản phẩm phần mềm vươn tầm quốc tế.",
+
+    images: [
+      {
+        url: "/img/banner1.jpg", // Đặt file này vào thư mục /public
+        width: 1200,
+        height: 630,
+        alt: "EG GROUP",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
