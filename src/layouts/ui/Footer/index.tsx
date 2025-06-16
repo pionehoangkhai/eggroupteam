@@ -10,9 +10,9 @@ const Footer = (props: Props) => {
   <div className="max-w-7xl w-full mx-auto flex flex-col items-center gap-6">
     
     {/* Logo */}
-    <div className="w-28 h-28 relative">
+    <div className="w-70 h-35 relative">
       <Image
-        src="/img/logo-egroup.png"
+        src="/img/logoeg.png"
         alt="EG GROUP Logo"
         fill
         className="object-contain"
