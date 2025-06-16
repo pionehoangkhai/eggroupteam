@@ -13,13 +13,13 @@ const ServicesTechnologies = () => {
     loop
     muted
     playsInline
-    className="absolute inset-0 w-full h-full object-cover z-0 opacity-20"
+    className="absolute inset-0 w-full h-full object-cover z-0 brightness-[.4] "
   >
     <source src="/video/video1.mp4" type="video/mp4" />
   </video>
 
   {/* 🔹 Lớp phủ tối */}
-  <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] z-10 opacity-90" />
+<div className="absolute inset-0 bg-gradient-to-br from-[#00040a] via-[#004d60]/40 to-[#172a45]/75 blur-[3px] z-0"></div>
 
   {/* 🔹 Nội dung chính */}
   <div className="relative z-20 max-w-6xl mx-auto text-center">
@@ -79,7 +79,6 @@ const ServicesTechnologies = () => {
       ))}
     </div>
   </div>
- <div className="absolute bottom-0 left-0 w-full h-[60px] bg-gradient-to-t from-[#00f2fe]/30 via-[#4facfe]/20 to-transparent z-10 pointer-events-none" />
 
 
 </section>

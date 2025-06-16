@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section
   id="about"
-  className="w-full bg-cover bg-center bg-no-repeat px-6 py-16 relative overflow-hidden"
+  className="w-full bg-cover bg-center bg-no-repeat px-6 py-12 relative overflow-hidden"
   
 >
   <video
@@ -22,7 +22,10 @@ const AboutUs = () => {
   </video>
   
   {/* Overlay màu xanh đậm pha tối giúp nổi nội dung */}
-  <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a]/90 to-[#1e293b]/90 z-0"></div>
+  <div className="absolute inset-0 bg-gradient-to-br from-[#09111d]/95 via-[#0a3d62]/90 to-[#00eaff]/75 z-0"></div>
+
+
+
 
   {/* Nội dung chính */}
   <div className="relative z-10 w-full h-full py-13 px-4">
