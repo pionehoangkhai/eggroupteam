@@ -79,7 +79,7 @@ export const AboutUs = [
     },
     {
       name: "Nguyễn Trần Trọng Nhân",
-      image: "/img/nhan.jpg",
+      image: "/img/nhan.jpeg",
       quote: "Chịu trách nhiệm phát triển và tích hợp các giải pháp trí tuệ nhân tạo vào nền tảng Layer 1 Blockchain, góp phần nâng cao hiệu suất, bảo mật và khả năng tự tối ưu của hệ thống.",
     },
     {
