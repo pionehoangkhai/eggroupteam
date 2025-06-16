@@ -38,7 +38,7 @@ const Terminal = () => {
             640: { slidesPerView: 4 },     // Desktop: 4 cards
           }}
           className="mySwiper "
-          data-aos="flip-left"
+          data-aos="fade-up"
         // style={{ overflow: 'visible' }} // 👈 THÊM DÒNG NÀY
         >
 
