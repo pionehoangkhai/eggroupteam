@@ -11,7 +11,7 @@ const ServicesTechnologies = () => {
          
         </h2>
         <p className="text-gray-700 max-w-xl mx-auto mb-12 text-lg leading-relaxed">
-          Cùng nhau làm việc – cùng nhau phát triển. Đây là những khoảnh khắc ghi lại <span className="text-[#04759C] font-semibold">tinh thần đồng đội</span>, <span className="text-[#00BFA5] font-semibold">sự sáng tạo</span> và <span className="text-orange-500 font-semibold">gắn kết</span> của EG Group.
+          Cùng nhau làm việc – cùng nhau phát triển. Đây là những khoảnh khắc ghi lại <span className="text-[#04759C] font-semibold">tinh thần đồng đội</span>, <span className="text-[#00BFA5] font-semibold">sự sáng tạo</span> và <span className="text-orange-500 font-semibold">gắn kết</span> của EG GROUP.
         </p>
 
         <div className="space-y-12" >

@@ -21,7 +21,7 @@ export const Services = [
     {
         title: "Video Demo",
         icon: "/img/software.png",
-        desc: "Đây là video trình bày sản phẩm và ý tưởng nhóm EG Group. Video giúp minh họa các tính năng nổi bật của nền tảng Layer 1 Blockchain mà nhóm phát triển.",
+        desc: "Đây là video trình bày sản phẩm và ý tưởng nhóm EG GROUP. Video giúp minh họa các tính năng nổi bật của nền tảng Layer 1 Blockchain mà nhóm phát triển.",
     },
     
     {

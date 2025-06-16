@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
     <div className="w-28 h-28 relative">
       <Image
         src="/img/logo-egroup.png"
-        alt="EG Group Logo"
+        alt="EG GROUP Logo"
         fill
         className="object-contain"
         sizes="112px" // giới hạn để tránh bùng layout
@@ -31,13 +31,13 @@ const Footer = (props: Props) => {
 
     {/* Mô tả */}
     <p className="text-center text-sm md:text-base text-gray-300 max-w-xl leading-relaxed px-4">
-      EG Group – Nơi hội tụ của những tài năng trẻ đam mê công nghệ và sáng tạo. 
+      EG GROUP – Nơi hội tụ của những tài năng trẻ đam mê công nghệ và sáng tạo. 
       Chúng tôi không ngừng đổi mới để tạo nên những giá trị bền vững trong kỷ nguyên số.
     </p>
     
     {/* Copyright */}
     <div className="mt-6 text-xs text-gray-400">
-      © {new Date().getFullYear()} EG Group. All rights reserved.
+      © {new Date().getFullYear()} EG GROUP. All rights reserved.
     </div>
   </div>
 </footer>
