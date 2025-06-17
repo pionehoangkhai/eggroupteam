@@ -50,26 +50,29 @@ const Whychoose = () => {
         >
           {video.map((video) => (
             <SwiperSlide key={video.id}>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center" data-aos="zoom-out-down">
                 <div
                   onClick={() => setActiveVideoUrl(video.url)}
-                  className="relative aspect-video w-full rounded-2xl overflow-hidden cursor-pointer group transition-transform duration-500 hover:scale-[1.07] hover:z-30"
+                  className="relative aspect-video w-full cursor-pointer group rounded-2xl p-[3px] bg-gradient-to-r from-[#00FFC6] via-[#00BFA5] to-[#0277BD] transition-all duration-500"
                 >
-                  {/* Video */}
-                  <iframe
-                    className="w-full h-full pointer-events-none rounded-2xl"
-                    src={`${video.url}?rel=0&hd=1`}
-                    title={`EG GROUP ${video.title}`}
-                    frameBorder="0"
-                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  {/* Lớp nền bên trong khung viền */}
+                  <div className="w-full h-full rounded-[14px] bg-[#0f172a] relative overflow-hidden">
 
-                  {/* Viền nhẹ khi không hover */}
-                  <div className="absolute inset-0 rounded-2xl border border-cyan-400/10 pointer-events-none transition-all duration-500 group-hover:border-cyan-300" />
+                    {/* Video zoom khi hover */}
+                    <iframe
+                      className="w-full h-full rounded-[14px] pointer-events-none relative z-10 transition-transform duration-500 group-hover:scale-[1.03]"
+                      src={`${video.url}?rel=0&hd=1`}
+                      title={`EG GROUP ${video.title}`}
+                      frameBorder="0"
+                      allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
 
-                  {/* Glow công nghệ khi hover */}
-                  <div className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-[0_0_30px_#00fff055,0_0_60px_#00e0ff77]" />
+                    {/* Glow chính giữa khi hover */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                      <div className="w-[60%] h-[60%] rounded-full bg-cyan-300/10 blur-2xl shadow-[0_0_60px_40px_#00fff055]" />
+                    </div>
+                  </div>
                 </div>
               </div>
 
