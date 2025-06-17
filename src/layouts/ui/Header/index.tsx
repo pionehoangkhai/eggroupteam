@@ -9,7 +9,7 @@ type Props = {}
 const Header = (props: Props) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // 🛠️ Thêm dòng này để fix lỗi
-
+  const [activeSection, setActiveSection] = useState('');
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -24,16 +24,17 @@ const Header = (props: Props) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-gray-800 shadow-lg' : 'bg-white dark:bg-gray-900'
-        }`}
+      className={`  fixed top-0 left-0 right-0 z-50 transition-colors duration-300 nav-light-sweep ${
+    scrolled ? 'bg-gray-800 shadow-lg' : 'bg-transparent'}`}
+
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative z-10">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
           <Image
             src="/img/logoeg.png"
             alt="EG Logo"
-            width={160}         // 👈 Tăng từ 120 → 160
+            width={200}         // 👈 Tăng từ 120 → 160
             height={80}         // 👈 Tăng từ 60 → 80
             priority
             className="h-auto object-contain"
@@ -43,7 +44,7 @@ const Header = (props: Props) => {
         {/* Mobile Menu Toggle */}
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-cyan-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -64,26 +65,58 @@ const Header = (props: Props) => {
         {/* Menu Items */}
         <div className={`${menuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
           <ul
-            className={`font-medium flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 rounded-lg ${scrolled ? 'text-white' : 'text-black'
+            className={`font-medium flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 rounded-lg ${scrolled ? 'text-white' : 'text-white'
               }`}
           >
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link
+                href="#"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setActiveSection('');
+                }}
+                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === '' ? 'text-blue-500 font-bold' : ''
+                  }`}
+              >
                 Trang chủ
               </Link>
             </li>
             <li>
-              <Link href="#about" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link
+                href="#about"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setActiveSection('about');
+                }}
+                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'about' ? 'text-blue-500 font-bold' : ''
+                  }`}
+              >
                 Giới thiệu
               </Link>
             </li>
             <li>
-              <Link href="#teamwork" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link
+                href="#teamwork"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setActiveSection('teamwork');
+                }}
+                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'teamwork' ? 'text-blue-500 font-bold' : ''
+                  }`}
+              >
                 Teamwork
               </Link>
             </li>
             <li>
-              <Link href="#videos" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link
+                href="#videos"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setActiveSection('videos');
+                }}
+                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'videos' ? 'text-blue-500 font-bold' : ''
+                  }`}
+              >
                 Video
               </Link>
             </li>
@@ -92,11 +125,17 @@ const Header = (props: Props) => {
                 href="/files/VietChain-Layer-1-Docs.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setActiveSection('docs');
+                }}
+                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'docs' ? 'text-blue-500 font-bold' : ''
+                  }`}
               >
                 Docs
               </a>
             </li>
+
           </ul>
         </div>
       </div>
