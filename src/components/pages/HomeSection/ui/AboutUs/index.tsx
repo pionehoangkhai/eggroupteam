@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="w-full bg-cover bg-center bg-no-repeat px-6 py-12 relative overflow-hidden"
+      className="w-full bg-cover bg-center bg-no-repeat px-6 py-12 relative overflow-hidden "
 
     >
       <video
