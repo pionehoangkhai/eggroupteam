@@ -83,23 +83,30 @@ const Whychoose = () => {
         {/* 🔹 Modal video khi click */}
         {activeVideoUrl && (
           <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center px-4 animate-fade-in">
-            <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(0,255,255,0.3)] border-2 border-transparent bg-[#0f172a] group transition-all duration-500 scale-100 animate-scale-in">
+            <div className="relative w-full max-w-5xl aspect-video rounded-3xl p-[3px] bg-gradient-to-r from-[#00FFC6] via-[#00BFA5] to-[#0277BD] shadow-[0_0_100px_#00FFF055] transition-all duration-500 group animate-scale-in">
 
-              {/* Viền chuyển sắc công nghệ khi hover */}
-              <div className="absolute inset-0 rounded-2xl z-10 pointer-events-none border-[3px] border-transparent group-hover:border-cyan-400 animate-border-glow" />
+              {/* Lớp nền bên trong */}
+              <div className="w-full h-full rounded-[20px] bg-[#0f172a] relative overflow-hidden">
 
-              <iframe
-                className="w-full h-full rounded-2xl z-20 relative"
-                src={`${activeVideoUrl}?autoplay=1&rel=0&hd=1`}
-                title="EG GROUP Modal Video"
-                frameBorder="0"
-                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                {/* Video với glow và scale nhẹ khi hover */}
+                <iframe
+                  className="w-full h-full rounded-[20px] relative z-10 transition-transform duration-500 group-hover:scale-[1.015] shadow-[0_0_60px_#00fff066]"
+                  src={`${activeVideoUrl}?autoplay=1&rel=0&hd=1`}
+                  title="EG GROUP Modal Video"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
 
-              {/* Nút đóng */}
+                {/* Glow trung tâm khi hover */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="w-[50%] h-[50%] rounded-full bg-cyan-300/10 blur-2xl shadow-[0_0_60px_40px_#00fff055]" />
+                </div>
+              </div>
+
+              {/* Nút đóng cải tiến */}
               <button
-                className="absolute top-3 right-3 z-30 text-white bg-black/50 backdrop-blur-md hover:bg-black/80 hover:text-cyan-300 transition-colors p-2 rounded-full text-xl"
+                className="absolute top-4 right-4 z-30 text-white bg-[#0f172a]/80 backdrop-blur-md p-2 rounded-full text-2xl shadow-md border border-white/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_#00fff055] transition-all duration-300"
                 onClick={() => setActiveVideoUrl(null)}
                 aria-label="Đóng"
               >
@@ -108,6 +115,7 @@ const Whychoose = () => {
             </div>
           </div>
         )}
+
       </div>
     </section>
 
