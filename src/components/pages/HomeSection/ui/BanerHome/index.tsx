@@ -22,7 +22,7 @@ const BanerHome = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-8 flex flex-col items-center justify-center h-full md:flex-row md:items-center md:justify-start">
         <div className="w-full md:max-w-[900px] text-center md:text-left space-y-4">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#00FFC6] via-[#00BFA5] to-[#0277BD] drop-shadow-[3px_3px_12px_rgba(0,0,0,0.9)]">
-            EG GROUP — Blockchain Layer 1
+            Blockchain Layer 1
           </h1>
           <p className="text-lg md:text-2xl font-medium text-white italic drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)] tracking-wide">
             Vươn Mình, Vững Bước
