@@ -50,28 +50,39 @@ const Whychoose = () => {
         >
           {video.map((video) => (
             <SwiperSlide key={video.id}>
-              <div
-                className="relative rounded-2xl overflow-hidden group aspect-video cursor-pointer hover:scale-[1.03] transition"
-                onClick={() => setActiveVideoUrl(video.url)}
-              >
-                <iframe
-                  className="w-full h-full pointer-events-none rounded-2xl"
-                  src={`${video.url}?rel=0&hd=1`}
-                  title={`EG GROUP ${video.title}`}
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <div className="absolute inset-0 rounded-2xl pointer-events-none border border-cyan-400/30 group-hover:animate-pulse-glow" />
+              <div className="flex items-center justify-center">
+                <div
+                  onClick={() => setActiveVideoUrl(video.url)}
+                  className="relative aspect-video w-full rounded-2xl overflow-hidden cursor-pointer group transition-transform duration-500 hover:scale-[1.07] hover:z-30"
+                >
+                  {/* Video */}
+                  <iframe
+                    className="w-full h-full pointer-events-none rounded-2xl"
+                    src={`${video.url}?rel=0&hd=1`}
+                    title={`EG GROUP ${video.title}`}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+
+                  {/* Viền nhẹ khi không hover */}
+                  <div className="absolute inset-0 rounded-2xl border border-cyan-400/10 pointer-events-none transition-all duration-500 group-hover:border-cyan-300" />
+
+                  {/* Glow công nghệ khi hover */}
+                  <div className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-[0_0_30px_#00fff055,0_0_60px_#00e0ff77]" />
+                </div>
               </div>
+
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* 🔹 Modal video khi click */}
         {activeVideoUrl && (
           <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center px-4 animate-fade-in">
             <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(0,255,255,0.3)] border-2 border-transparent bg-[#0f172a] group transition-all duration-500 scale-100 animate-scale-in">
 
-              {/* Viền chuyển sắc công nghệ */}
+              {/* Viền chuyển sắc công nghệ khi hover */}
               <div className="absolute inset-0 rounded-2xl z-10 pointer-events-none border-[3px] border-transparent group-hover:border-cyan-400 animate-border-glow" />
 
               <iframe
@@ -94,7 +105,6 @@ const Whychoose = () => {
             </div>
           </div>
         )}
-
       </div>
     </section>
 
