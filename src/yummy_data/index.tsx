@@ -142,32 +142,32 @@ export const Companies5 = [
 //   ];
 export const teamMoments = [
   {
-    src: "/img/6.jpeg",
+    src: "/img/6.webp",
     title: "Từng bước xây dựng thành công",
     description: "Môi trường làm việc giàu năng lượng, nơi mọi thành viên đều là mảnh ghép quan trọng góp phần kiến tạo thành công bền vững.",
     dataaos: "fade-left"
 
   },
   {
-    src: "/img/1.jpeg",
+    src: "/img/1.webp",
     title: "Tìm & thu thập thông tin",
     description: "Quá trình tìm kiếm tài liệu là bước khởi đầu quan trọng, nơi ý tưởng được khơi nguồn và giải pháp công nghệ từng bước được hình thành qua sự hợp tác chặt chẽ giữa các thành viên.",
     dataaos: "fade-right"
   },
   {
-    src: "/img/4.jpeg",
+    src: "/img/4.webp",
     title: "Cập nhật tài liệu",
     description: "Các thành viên cùng nhau đóng góp ý kiến và bổ sung thông tin, từng bước hoàn thiện hệ thống tài liệu – nền tảng vững chắc cho thành công chung của team.",
     dataaos: "fade-left"
   },
   {
-    src: "/img/2.jpeg",
+    src: "/img/2.webp",
     title: "Tiếp nhận phản hồi",
     description: "Mỗi ý kiến đều được lắng nghe và trân trọng, tạo nên một không gian làm việc cởi mở, nơi mọi cá nhân đều cảm thấy được thấu hiểu và đồng hành.",
     dataaos: "fade-right"
   },
   {
-    src: "/img/3.jpeg",
+    src: "/img/3.webp",
     title: "Hoàn thiện & Triển khai",
     description: "Giai đoạn tổng kết là lúc cả nhóm cùng nhìn lại chặng đường đã đi qua – từ việc xác định vấn đề, đề xuất ý tưởng, đến xây dựng và hoàn thiện giải pháp. Đây không chỉ là bước đánh giá kết quả, mà còn là thời điểm để rút ra bài học, nhận diện điểm mạnh – điểm cần cải thiện, từ đó đưa ra kế hoạch hành động cụ thể và hiệu quả.",
     dataaos: "fade-left"
