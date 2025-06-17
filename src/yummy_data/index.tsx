@@ -176,5 +176,6 @@ export const teamMoments = [
 export const video = [
   { id: 1, url: 'https://www.youtube.com/embed/kI2EybUjMhA', title: 'Video 1' },
   { id: 2, url: 'https://www.youtube.com/embed/EA7Ew4TmZXs', title: 'Video 2' },
-  { id: 3, url: 'https://www.youtube.com/embed/EA7Ew4TmZXs', title: 'Video 3' },
+  { id: 3, url: 'https://www.youtube.com/embed/kI2EybUjMhA', title: 'Video 3' },
+  { id: 4, url: 'https://www.youtube.com/embed/EA7Ew4TmZXs', title: 'Video 2' },
 ]
