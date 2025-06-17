@@ -75,7 +75,7 @@ const Header = (props: Props) => {
                   setMenuOpen(false);
                   setActiveSection('');
                 }}
-                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === '' ? 'text-blue-500 font-bold' : ''
+                className={`block py-2 px-3 hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === '' ? 'text-cyan-500 font-bold' : ''
                   }`}
               >
                 Trang chủ
@@ -88,7 +88,7 @@ const Header = (props: Props) => {
                   setMenuOpen(false);
                   setActiveSection('about');
                 }}
-                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'about' ? 'text-blue-500 font-bold' : ''
+                className={`block py-2 px-3 hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'about' ? 'text-cyan-500 font-bold' : ''
                   }`}
               >
                 Giới thiệu
@@ -101,7 +101,7 @@ const Header = (props: Props) => {
                   setMenuOpen(false);
                   setActiveSection('teamwork');
                 }}
-                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'teamwork' ? 'text-blue-500 font-bold' : ''
+                className={`block py-2 px-3 hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'teamwork' ? 'text-cyan-500 font-bold' : ''
                   }`}
               >
                 Teamwork
@@ -114,7 +114,7 @@ const Header = (props: Props) => {
                   setMenuOpen(false);
                   setActiveSection('videos');
                 }}
-                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'videos' ? 'text-blue-500 font-bold' : ''
+                className={`block py-2 px-3 hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'videos' ? 'text-cyan-500 font-bold' : ''
                   }`}
               >
                 Video
@@ -129,7 +129,7 @@ const Header = (props: Props) => {
                   setMenuOpen(false);
                   setActiveSection('docs');
                 }}
-                className={`block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 ${activeSection === 'docs' ? 'text-blue-500 font-bold' : ''
+                className={`block py-2 px-3 hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'docs' ? 'text-cyan-500 font-bold' : ''
                   }`}
               >
                 Docs
