@@ -68,22 +68,22 @@ const Header = (props: Props) => {
               }`}
           >
             <li>
-              <Link href="#" className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link href="#" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
                 Trang chủ
               </Link>
             </li>
             <li>
-              <Link href="#about" className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link href="#about" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
                 Giới thiệu
               </Link>
             </li>
             <li>
-              <Link href="#teamwork" className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link href="#teamwork" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
                 Teamwork
               </Link>
             </li>
             <li>
-              <Link href="#videos" className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
+              <Link href="#videos" onClick={() => setMenuOpen(false)} className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500">
                 Video
               </Link>
             </li>
