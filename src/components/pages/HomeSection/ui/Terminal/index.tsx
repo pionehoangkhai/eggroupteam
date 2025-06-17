@@ -61,7 +61,7 @@ const Terminal = () => {
                     </div>
 
                     {/* Quote */}
-                    <p className="text-sm italic leading-relaxed text-slate-300 relative mt-3 before:content-['“'] before:text-cyan-400 before:text-xl before:mr-1">
+                    <p className="text-sm italic leading-relaxed text-slate-300 relative mt-3 before:content-['“'] after:content-['”'] before:text-cyan-400 after:text-cyan-400 before:text-xl after:text-xl before:mr-1 after:ml-1">
                       {user.quote}
                     </p>
 
