@@ -23,7 +23,7 @@ const Whychoose = () => {
 
   {/* 🔹 Nội dung chính */}
   <div className="relative z-20 max-w-6xl mx-auto text-center">
-    <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFA5] via-[#00ACC1] to-[#04759C] mb-6 drop-shadow font-['Space_Grotesk'] tracking-tight">
+    <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFC6] via-[#00BFA5] to-[#0277BD] mb-6 drop-shadow font-['Space_Grotesk'] tracking-tight">
       Hành trình EG GROUP
     </h2>
     <p className="text-slate-300 max-w-2xl mx-auto mb-12 text-base md:text-lg leading-relaxed px-2">

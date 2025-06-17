@@ -19,11 +19,11 @@ const ServicesTechnologies = () => {
   </video>
 
   {/* 🔹 Lớp phủ tối */}
-<div className="absolute inset-0 bg-gradient-to-br from-[#00040a] via-[#004d60]/40 to-[#172a45]/75 blur-[3px] z-0"></div>
+<div className="absolute inset-0 bg-gradient-to-br  from-[#00040a] via-[#004d60]/40 to-[#172a45]/75 blur-[3px] z-0"></div>
 
   {/* 🔹 Nội dung chính */}
   <div className="relative z-20 max-w-6xl mx-auto text-center">
-    <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFA5] via-[#00ACC1] to-[#04759C] mb-6 drop-shadow-xl font-['Space_Grotesk'] tracking-tight">
+    <h2 className="text-[50px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00FFC6] via-[#00BFA5] to-[#0277BD] mb-6 drop-shadow-xl font-['Space_Grotesk'] tracking-tight">
       Team Work
     </h2>
     <p className="text-slate-300 max-w-xl mx-auto mb-12 text-lg leading-relaxed">
