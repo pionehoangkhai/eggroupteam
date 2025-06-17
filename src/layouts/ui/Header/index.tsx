@@ -82,7 +82,16 @@ const Header = (props: Props) => {
                 Video
               </Link>
             </li>
-
+            <li>
+              <a
+                href="/files/VietChain-Layer-1-Docs.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 px-3 hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+              >
+                Docs
+              </a>
+            </li>
           </ul>
         </div>
       </div>
