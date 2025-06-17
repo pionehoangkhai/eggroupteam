@@ -17,7 +17,7 @@ const AboutUs = () => {
         muted
         playsInline
       >
-        <source src="/video/Member.mp4" type="video/mp4" />
+        <source src="/video/about.mp4" type="video/mp4" />
 
       </video>
 

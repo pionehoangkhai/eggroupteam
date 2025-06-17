@@ -15,7 +15,7 @@ const ServicesTechnologies = () => {
     playsInline
     className="absolute inset-0 w-full h-full object-cover z-0 brightness-[.4] "
   >
-    <source src="/video/video1.mp4" type="video/mp4" />
+    <source src="/video/teanwork.mp4" type="video/mp4" />
   </video>
 
   {/* 🔹 Lớp phủ tối */}

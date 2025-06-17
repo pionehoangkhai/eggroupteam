@@ -25,7 +25,7 @@ const Whychoose = () => {
       </video>
 
       {/* 🔹 Lớp phủ gradient tối giúp dễ nhìn chữ */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] z-10 opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1e293b] via-[#334155] to-[#1e293b] z-10 opacity-70" />
 
       {/* 🔹 Nội dung chính */}
       <div className="relative z-20 max-w-6xl mx-auto text-center">
