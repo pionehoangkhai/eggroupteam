@@ -39,8 +39,9 @@ const Footer = (props: Props) => {
 
     {/* Copyright */}
     <div className="mt-6 text-xs text-slate-500">
-      © {new Date().getFullYear()} <span className="text-cyan-400">EG GROUP</span>. All rights reserved.
+      © {new Date().getFullYear()} <span className="text-cyan-400">EG GROUP</span>. Dự án này được thực hiện bởi các nhân sự chính thức thuộc Công ty Pione Group, nhằm tham gia cuộc thi với tinh thần sáng tạo và chuyên nghiệp.
     </div>
+    
   </div>
 </footer>
 
