@@ -21,7 +21,7 @@ openGraph: {
 
     images: [
       {
-        url: "https://eggroup-eg9.vercel.app/img/banner1.jpg", // Đặt file này vào thư mục /public
+        url: "/img/banner1.jpg", // Đặt file này vào thư mục /public
         width: 1200,
         height: 630,
         alt: "EG GROUP",
