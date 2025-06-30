@@ -175,7 +175,7 @@ export const teamMoments = [
 ];
 export const video = [
   { id: 1, url: 'https://www.youtube.com/embed/kI2EybUjMhA', title: 'Giới Thiệu EG GROUP - Blockchain Layer 1' },
-  { id: 2, url: 'https://www.youtube.com/embed/EA7Ew4TmZXs', title: 'Giới thiệu dự án Blockchain Layer 1' },
+  { id: 2, url: 'https://www.youtube.com/embed/FNZe8XgG1qE', title: 'Giới thiệu dự án Blockchain Layer 1' },
   { id: 3, url: 'https://www.youtube.com/embed/O-M4EPwoFQM', title: 'Thiết kế & xây dựng cơ sở hạ tầng TobeChain - Blockchain Layer 1 - Made in Vietnam ' },
   { id: 4, url: 'https://www.youtube.com/embed/EA7Ew4TmZXs', title: 'Video 2' },
 ]
