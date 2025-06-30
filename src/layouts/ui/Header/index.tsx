@@ -139,12 +139,12 @@ const Header = (props: Props) => {
               </li>
               <li>
                 <Link
-                  href="#https://tobechain.net/"
+                  href="https://tobechain.net/"
                   onClick={() => {
                     setMenuOpen(false);
-                    setActiveSection('#https://tobechain.net/');
+                    setActiveSection('https://tobechain.net/');
                   }}
-                  className={`block py-2 px-3 text-lg hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'about' ? 'text-cyan-500 font-bold' : ''
+                  className={`block py-2 px-3 text-lg hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-500 ${activeSection === 'tobechain' ? 'text-cyan-500 font-bold' : ''
                     }`}
                 >
                   TobeChain
