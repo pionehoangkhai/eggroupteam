@@ -23,7 +23,7 @@ const Header = (props: Props) => {
   }, []);
 
   return (
-    <>
+    <div>
     <nav
       className={`  fixed top-0 left-0 right-0 z-50 transition-colors duration-300 nav-light-sweep ${
     scrolled ? 'bg-gray-800 shadow-lg' : 'bg-transparent'}`}
@@ -141,7 +141,7 @@ const Header = (props: Props) => {
         </div>
       </div>
     </nav>
-    </>
+    </div>
   );
 };
 
